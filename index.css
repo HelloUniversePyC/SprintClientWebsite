@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+body {
+    margin: 0;
+    background: url("https://www.toptal.com/designers/subtlepatterns/uploads/cream_dust.png") repeat 0 0;
+  }
+  a {
+    text-decoration: none;
+    color: #100C08;
+    transition: color 0.3s, background-size .3s;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+ 
+  }
+  a:hover, a:focus {
+    text-decoration: none; 
+    background-size: 100% 2px;
+    color: #ccc;
+}
+table{
+  background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
+  width: 100%; 
+  height: 100%;
+}
+h1{
+  color: white; 
+}
+table td{
+  padding: 100px; 
+  color: white;
+}
+table p{
+  text-align: center;
+  font-size: 20px;
+}
+li{
+  padding: 12%;
+}
+ul{
+  list-style: none;
+}
+
+.speech-bubble {
+  background: #ddd;
+  color: #333;
+  display: inline-block;
+	font-size: 14px;
+  line-height: 4em;
+  margin-bottom: 1em;
+	padding: 0 1em;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+		min-width: 7em;
+}
+.speech-bubble:after {
+	border: 1em solid transparent;
+	border-top-color: #ddd;
+	content: '';
+	margin-left: -1em;
+	position: absolute;
+		top: 100%;
+		left: 50%;
+	width: 0;
+	height: 0;
+}
+
+.speech-bubble.large {
+	font-size: 2em;
+	padding: 0 1em;
+		min-width: 4em;
+}
+
+.speech-bubble.rounded {
+	border-radius: .4em;
+}
+
+.speech-bubble.blue {
+	background: #ddf;
+	color: #334;
+}
+.speech-bubble.blue:after {
+	border-top-color: #ddf;
+}
+
+.footer{
+  background-color:#CE2029;
+  width: 100%;
+  text-align: center;
+}
+
+  .site-header { 
+    transition: background-color 0.5s ease;
+    border-bottom: 1px solid #DCE0D9;
+    background-color: #CE2029;
+    width: 100%;
+    color: #100C08;
+    padding: .5em 1em;
+    position: fixed;
+    z-index: 10; 
+    text-decoration: none;
+  }
+  .site-header.transparent {
+    background-color: transparent; 
+    }
+  #logotxt{
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 1px 1px #808F85;
+  }
+  .site-header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .button {
+    transition: border 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    background-color: #CE2029; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 10%;
+    font-family: Ubuntu;
+    box-shadow: 2px 2px 1px #100C08;
+    
+  }
+  .button:hover{
+    border: #ccc;
+    box-shadow: 2px 2px 1px #ccc;
+    background-color: #D63440;
+  }
+  .button p{
+    transform: TranslateY(40%)
+  }
+  #SignUp{
+    position: absolute;
+    margin-top: 0; 
+    bottom: 10px; /* Adjust this value for your design */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Necessary to truly center the button */
+}
+  
+  
+  .site-identity {
+    float: left;
+  }
+  
+  .site-identity h1 {
+    font-size: 1.5em;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+  }
+  
+  .site-identity img {
+    max-width: 55px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  
+  .site-navigation {
+    float: right;
+  }
+  
+  .site-navigation ul, li {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  .site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+    font-weight: 300; 
+    font-family: "Arial Black" Gadget, sans-serif;
+  }
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 99%;
+  margin: auto;
+  z-index: 1;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #DCE0D9;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-shadow:#ccc;
+}
+.dotgrp{
+  position: absolute;
+  margin-top: 65%;
+  z-index: 3;
+  margin-left: 35%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #100C08;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #100C08;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.slideshow-container{
+    position: relative;
+    z-index: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px;
+  background-color: #100C08;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #808F85;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* #CE2029  Red
+#100C08 Black
+#808F85 Darker Grey
+#DCE0D9 Lighter grey*/
+
+/* Copy Website 
+https://www.athleticlab.com/# */ 
