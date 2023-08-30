@@ -19,9 +19,37 @@ body {
     color: #ccc;
 }
 table{
-  background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
   width: 100%; 
   height: 100%;
+}
+#globe{
+  -webkit-filter: saturate(200%); /* Safari 6.0 - 9.0 */
+  filter: saturate(200%);
+  height: 80%;
+  width: 80%; 
+}
+#hero{
+ position: fixed;
+}
+.scatter{
+  position: relative;
+  transform: translateY(-230%);
+  transform: translateX (-100%);
+  z-index: 10; 
+}
+.scatter td img{
+  opacity: 0.5; 
+  border-radius: 44%; 
+}
+.scatter td{
+  padding: 100px; 
+  margin: 0; 
+}
+#grp{
+  display: inline-block;
+}
+#texture{
+  background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
 }
 h1{
   color: white; 

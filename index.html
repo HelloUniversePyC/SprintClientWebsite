@@ -4,11 +4,14 @@
 <link rel = "stylesheet" type = "text/css" href = "index.css">
 <script src="https://kit.fontawesome.com/c1fb130ff1.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </head>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
     <body>
         <header class="site-header">
             <div class="site-identity">
@@ -57,23 +60,56 @@
   <button id = "SignUp" class = "button">
     <p ><a href = "#" style = "color:black">SIGN UP NOW!</a></p>
   </button>
-  <br>
+  <table class = "hero">
+    <br/>
+    <tr> 
+      <td>
+    <img id = "globe" src = "https://i.gifer.com/origin/2d/2dad06fa6bd060907a25575dffca5499_w200.gif"/>
+  </td>
+    
+  <td>
+    <h1 class = "animate__animated animate__pulse animate__infinite animate__delay-0.5s animate__fast" style = "color:black">100s of Sports ALL united by Olympic Sprint Club!</h1>
+  </td>
+  </tr>
+  <tr>
+ <td>
+    <table class = "topper">
+      <tr class = "scatter">
+        <td><img data-aos = "zoom-in-up" style = "width:130%;height:200%" src= "https://i.pinimg.com/originals/a2/c1/66/a2c166a3bfa7cc9a1bfa2b7d25d77952.gif"/></td>
+      
+        <td><img data-aos = "zoom-in-right" data-aos-delay = "100" style = "width:130%;height:80%" src = "https://media2.giphy.com/media/poqnyDbavYXgA/giphy.gif"/></td>
+      </tr>
+    <tr class = "scatter">
+      <td><img  data-aos = "zoom-in-down" data-aos-delay = "200" style = "width:130%;height:100%" src = "https://media2.giphy.com/media/l0HUmoQFHhcgQLFxm/giphy.gif"/></td>
+      <td><img  data-aos = "zoom-in-left" data-aos-delay = "300" style = "width:130%;height:100%" src = "https://media.tenor.com/kncQWI2yhZQAAAAM/overcomer-overcomer-movie.gif"/></td>
+    </tr>
+  </td>
+</tr>
+    </table>
+ 
+  
+   
+  </table>
   <br/>
-  <table class = "bio">
+  <br/>
+  <table id = "texture" data-aos = "fade-left" data-aos-once= "false" class = "bio">
     <tr>
       <center>
         <h1>Meet Speed Specialist!</h1>
       </center>
     </tr>
     <tr>
+      <td id = "photo"><img src = "#" /></td>
+      <td id = "Bio"><h3>CESAR Work in Progress to Come</h3></td>
       <td id = "photo"><img src = "https://tinyurl.com/dougolumpic"/> <br/> <br/><a href = "#" style = "color:white"><p><i class="fa-solid fa-person-running fa-beat" style="color: #eaecf0;"></i>Wyndell  Dickerson 2 Time Olympian </p></a></td>
       <td id = "Bio"><ul><i class="fa-solid fa-bolt fa-beat"></i><li>About me</li><br/><i class="fa-solid fa-bolt fa-beat"></i><li>My Training Psychology</li><br/><i class="fa-solid fa-bolt fa-beat"></i><li>You can build olmpic level speed today!</li></ul><br/></ul></td>
+      
     </tr>
   </table>
   <center>
-    <h1>Your Fitness Plan</h1>
+    <h1>How we can Take you to the next Level</h1>
   </center>
- <table class = "services">
+ <table id= "texture" class = "services">
   <tr>
     <td style = "text-align:center"><div class = "opt"><i class="fa-sharp fa-solid fa-hourglass fa-beat fa-2xl" style="color: #ffffff;"></i><br/><p>Speed Training</p><p style = "font-size: 15px">Details</p></div></td>
     <td style = "text-align:center"><div class = "opt"><i class="fa-solid fa-dumbbell fa-beat fa-2xl" style="color: #fafafa;"></i><br/><p>Strength Training</p><p style = "font-size: 15px">details</p></div></td>
@@ -115,6 +151,7 @@
     
 </html>
 <script>
+  AOS.init();
 let slideIndex = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
