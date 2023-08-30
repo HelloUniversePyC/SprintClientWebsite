@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Globe with Images</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <script type="module">
+    import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.min.js';
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const globeTexture = new THREE.TextureLoader().load('https://static.turbosquid.com/Preview/2014/08/01__23_25_03/earth_map_BW.png036adb6b-ac44-4c85-8f21-ed285c1c5835Large.jpg');
+    const globeGeometry = new THREE.SphereGeometry(5, 32, 32);
+    const globeMaterial = new THREE.MeshBasicMaterial({ map: globeTexture });
+    const globe = new THREE.Mesh(globeGeometry, globeMaterial);
+    scene.add(globe);
+
+    const images = [
+      'https://i.pinimg.com/originals/a2/c1/66/a2c166a3bfa7cc9a1bfa2b7d25d77952.gif',
+      'https://media2.giphy.com/media/poqnyDbavYXgA/giphy.gif',
+      'https://media2.giphy.com/media/l0HUmoQFHhcgQLFxm/giphy.gif',
+      'https://media.tenor.com/kncQWI2yhZQAAAAM/overcomer-overcomer-movie.gif'
+    ];
+
+    const grid = new THREE.Group();
+    const gridSize = 5;
+    const numImages = 10;
+
+    for (let i = 0; i < numImages; i++) {
+      const imageTexture = new THREE.TextureLoader().load(images[i % images.length]);
+      const imageMaterial = new THREE.MeshBasicMaterial({ map: imageTexture, transparent: true, opacity: 0.7 });
+      const imageGeometry = new THREE.PlaneGeometry(1, 1);
+      const imageMesh = new THREE.Mesh(imageGeometry, imageMaterial);
+
+      const phi = Math.acos(-1 + (2 * i) / numImages);
+      const theta = (Math.PI * 2 * i) / numImages;
+
+      imageMesh.position.setFromSphericalCoords(gridSize, phi, theta);
+      imageMesh.lookAt(new THREE.Vector3(0, 0, 0));
+      grid.add(imageMesh);
+    }
+
+    scene.add(grid);
+
+    camera.position.z = 15;
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      globe.rotation.y += 0.005;
+
+      renderer.render(scene, camera);
+    };
+
+    animate();
+  </script>
+</body>
+</html>
