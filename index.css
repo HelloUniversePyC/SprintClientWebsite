@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 body {
     margin: 0;
-    background: url("https://www.toptal.com/designers/subtlepatterns/uploads/cream_dust.png") repeat 0 0;
+    /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
+    background-color: #fafafa;
+   
   }
   a {
     text-decoration: none;
@@ -18,6 +20,29 @@ body {
     background-size: 100% 2px;
     color: #ccc;
 }
+#bottom-bor{
+ margin-top: 10%;
+ z-index: 10;
+}
+.divider
+{
+  position: relative;
+  margin-top: 90px;
+  height: 1px;
+}
+
+.div-transparent:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
 table{
   width: 100%; 
   height: 100%;
@@ -25,29 +50,42 @@ table{
 #globe{
   -webkit-filter: saturate(200%); /* Safari 6.0 - 9.0 */
   filter: saturate(200%);
-  height: 80%;
-  width: 80%; 
+  height: 40%;
+  width: 250%;
+  padding: 0;
+  margin: 1%;  
 }
-#hero{
- position: fixed;
+.layout img{
+  width: 25%;
+  height: 25%; 
+  padding: 0; 
 }
-.scatter{
-  position: relative;
-  transform: translateY(-230%);
-  transform: translateX (-100%);
-  z-index: 10; 
-}
-.scatter td img{
-  opacity: 0.5; 
-  border-radius: 44%; 
-}
-.scatter td{
-  padding: 100px; 
+.layout{
   margin: 0; 
+  padding: 0; 
+  display: inline;
+  position: flex; 
+  transform: translateY(50%);  
+  margin-left: auto;
+  margin-right: auto; 
 }
-#grp{
-  display: inline-block;
+
+.hero{
+  border-collapse: collapse;
+  border-spacing: 0; 
 }
+.hero tr{
+  line-height: 1;
+}
+.focus h1{
+  margin-top: -50%; 
+  text-align: center;
+}
+.focus2 h1{
+  margin-top: -10%;
+  text-align: center;
+}
+
 #texture{
   background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
 }
