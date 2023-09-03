@@ -157,11 +157,12 @@ ul{
 }
 
   .site-header { 
-    transition: background-color 0.5s ease, filter 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
     border-bottom: 1px solid #DCE0D9;
     background-color: #CE2029;
+    text-shadow: none; 
     width: 100%;
-    color: #100C08;
+    color: black; 
     padding: .5em 1em;
     position: fixed;
     z-index: 10; 
@@ -170,6 +171,9 @@ ul{
   .site-header.transparent {
     background-color: transparent; 
     filter: invert(100%);
+    color: #fafafa;
+    text-shadow: 1px 1px #808F85;
+    
     }
   #logotxt{
     font-family: 'Orbitron', sans-serif;
