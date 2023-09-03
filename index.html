@@ -17,13 +17,14 @@
         <header class="site-header">
             <div class="site-identity">
               <a href="./index.html"><img src=./Images/logo.webp.webp alt="Speed Specialist" /></a>
-              <h1 id = "logotxt" ><a href="#" style = "color:black">Speed Specialist</a></h1>
+              <h1 class = "special" id = "logotxt" ><a href="#" style = "color:black">Speed Specialist</a></h1>
             </div>  
             <nav class="site-navigation">
               <ul class="nav">
-                <li><a href="#" style = "color:black"><strong>Wyndell Dickerson</strong></a></li> 
-                <li><a href="#" style = "color:black"><strong>Insta @Speed Specialist</strong></a></li> 
-                <li><a href="#" style = "color:black"><strong>me@website.com XXX-XXX-XXXX</strong></a></li> 
+                <li><a href ="https://www.instagram.com/sprintclub.co/"><i id = "social" class="fa-brands fa-instagram fa-2xl" style="color: white"></i><p style = "font-size:14px" class = "special">@SprintCo</p></a></li> 
+                <li><a href ="https://www.instagram.com/speedspecialist/"><i id = "social2" class="fa-brands fa-instagram fa-2xl" style="color: white"></i><p style = "font-size:14px" class = "special">@SpeedSpecialist</p></a></li> 
+                <li><a class = "special" href="https://www.thesprintproject.co/"><i style = "color:white" class="fa-solid fa-person-running fa-2xl"></i><strong><p class = "special" style = "font-size:14px">Visit Our Flagship Website</p></strong></a></li> 
+                <li><a href ="https://www.instagram.com/sprintclub.co/"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i><p style = "font-size:14px" class = "special">Youtube Channel!</p></a></li> 
               </ul>
             </nav>
           </header>
@@ -105,12 +106,12 @@
   <table id = "texture" data-aos = "fade-left" data-aos-once= "false" class = "bio">
     <tr>
       <center>
-        <h1>Meet Speed Specialist!</h1>
+        <h1>Meet Our Speed Specialists!</h1>
       </center>
     </tr>
     <tr>
-      <td id = "photo"><img src = "#" /></td>
-      <td id = "Bio"><h3>CESAR Work in Progress to Come</h3></td>
+      <td id = "photo"><img style = "width:350%;height:80%" src = "./Images/Ceser.jpg" /></td>
+      <td id = "Bio"><h3>Cesar</h3></td>
       <td id = "photo"><img style = "width:225%;height:300%" src = ./Images/DougProfileFinal.jpg > <br/> <br/><a href = "#" style = "color:white"><p><i class="fa-solid fa-person-running fa-beat" style="color: #eaecf0;"></i>Wyndell  Dickerson 2 Time Olympian </p></a></td>
       <td id = "Bio"><ul><i class="fa-solid fa-bolt fa-beat"></i><li>About me</li><br/><i class="fa-solid fa-bolt fa-beat"></i><li>My Training Psychology</li><br/><i class="fa-solid fa-bolt fa-beat"></i><li>You can build olmpic level speed today!</li></ul><br/></ul></td>
       
@@ -201,5 +202,29 @@ isScrolling = setTimeout(function() {
 }, 66); // You can set time as per your requirement
 
 }, false);
+//To Add shake effect on hover:
+
+var myElement = document.getElementById('social');
+
+    myElement.addEventListener('mouseover', function() {
+        myElement.classList.remove("fa-brands", "fa-instagram", "fa-2xl");
+        myElement.classList.add("fa-brands", "fa-instagram", "fa-beat-fade", "fa-2xl");
+    });
+
+    myElement.addEventListener('mouseout', function() {
+        myElement.classList.remove("fa-beat-fade");
+    });
+
+    var element2 = document.getElementById('social2');
+
+    element2.addEventListener('mouseover', function() {
+        myElement.classList.remove("fa-brands", "fa-instagram", "fa-2xl");
+        myElement.classList.add("fa-brands", "fa-instagram", "fa-beat-fade", "fa-2xl");
+    });
+
+    element2.addEventListener('mouseout', function() {
+        myElement.classList.remove("fa-beat-fade");
+    });
 });
+
 </script>
