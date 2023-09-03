@@ -157,7 +157,7 @@ ul{
 }
 
   .site-header { 
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, filter 0.5s ease-in-out;
     border-bottom: 1px solid #DCE0D9;
     background-color: #CE2029;
     width: 100%;
@@ -169,6 +169,7 @@ ul{
   }
   .site-header.transparent {
     background-color: transparent; 
+    filter: invert(100%);
     }
   #logotxt{
     font-family: 'Orbitron', sans-serif;
@@ -205,7 +206,7 @@ ul{
   }
   #SignUp{
     position: absolute;
-    margin-top: 0; 
+    margin-top: 100px; 
     bottom: 10px; /* Adjust this value for your design */
   left: 50%; /* Center the button horizontally */
   transform: translateX(-50%); /* Necessary to truly center the button */
@@ -223,11 +224,15 @@ ul{
   }
   
   .site-identity img {
-    max-width: 55px;
+    max-width: 65px;
     float: left;
-    margin: 0 10px 0 0;
+    margin: 5px 10px 0 0;
+    transition: 0.6s ease;
+    
   }
-  
+  .site-identity img:hover{
+    background-color: rgba(0,0,0,0.5);
+  }
   .site-navigation {
     float: right;
   }
@@ -240,8 +245,8 @@ ul{
   .site-navigation li {
     display: inline-block;
     margin: 1.4em 1em 1em 1em;
-    font-weight: 300; 
-    font-family: "Arial Black" Gadget, sans-serif;
+    font-weight: 150; 
+    font-family: "Roboto", sans-serif;
   }
 /* Slideshow container */
 .slideshow-container {
@@ -287,7 +292,7 @@ ul{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255,0,59,0.8);
 }
 
 /* Caption text */
@@ -327,7 +332,7 @@ ul{
 }
 
 .active, .dot:hover {
-  background-color: #808F85;
+  background-color: #CE2029;
 }
 
 /* Fading animation */
@@ -339,6 +344,56 @@ ul{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.style {
+  display: block;
+  border-radius: 5%;  
+  line-height: 150%;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* For bold */
+  text-decoration: none;
+  color: black; 
+  background-color: rgba(255,255,255,0.4);
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.style span{
+  position: relative;
+  z-index: 2; 
+}
+
+.style:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  text-decoration: underline; 
+  border-radius: 5%; 
+  transition: all .35s;
+}
+
+.style:hover{
+  color: #fff;
+}
+
+.style:hover:after{
+  width: 100%;
 }
 
 /* #CE2029  Red
