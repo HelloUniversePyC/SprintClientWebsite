@@ -23,8 +23,8 @@
               <ul class="nav">
                 <li  style = "text-align:center"><a href ="https://www.instagram.com/sprintclub.co/"><i id = "social" class="fa-brands fa-instagram fa-2xl" style="color: white"></i><p style = "font-size:14px;" class = "special">@SprintCo</p></a></li> 
                 <li style = "text-align:center"><a href ="https://www.instagram.com/speedspecialist/"><i id = "social2" class="fa-brands fa-instagram fa-2xl" style="color: white"></i><p style = "font-size:14px" class = "special">@SpeedSpecialist</p></a></li> 
-                <li style = "text-align:center"><a class = "special" href="https://www.thesprintproject.co/"><i style = "color:white" class="fa-solid fa-person-running fa-2xl"></i><strong><p class = "special" style = "font-size:14px">Visit Our Flagship Website</p></strong></a></li> 
-                <li  style = "text-align:center"><a href ="https://www.instagram.com/sprintclub.co/"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i><p style = "font-size:14px" class = "special">Youtube Channel!</p></a></li> 
+                <li style = "text-align:center"><a class = "special" href="https://www.thesprintproject.co/"><i id = "social3" style = "color:white" class="fa-solid fa-person-running fa-2xl"></i><strong><p class = "special" style = "font-size:14px">Visit Our Flagship Website</p></strong></a></li> 
+                <li  style = "text-align:center"><a href ="https://www.instagram.com/sprintclub.co/"><i id = "social4" class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i><p style = "font-size:14px" class = "special">Youtube Channel!</p></a></li> 
               </ul>
             </nav>
           </header>
@@ -80,7 +80,7 @@
   <div style = "width:50%;height:60%;"id = "SignUp" class="wrapper animate__animated animate__pulse animate__infinite animate__delay-0.5s">
     <a class = "style" href="./signup.html"><span>Join Us!</span></a>
   </div>
-  <table class = "hero">
+  <table style = "width:60%;height:50%" class = "hero">
     <br/>
     <tr> 
         <div class="divider div-transparent"></div>
@@ -234,25 +234,48 @@ isScrolling = setTimeout(function() {
 
 var myElement = document.getElementById('social');
 
-    myElement.addEventListener('mouseover', function() {
-        myElement.classList.remove("fa-brands", "fa-instagram", "fa-2xl");
-        myElement.classList.add("fa-brands", "fa-instagram", "fa-beat-fade", "fa-2xl");
-    });
+myElement.addEventListener('mouseover', function() {
+    myElement.classList.remove("fa-brands", "fa-instagram", "fa-2xl");
+    myElement.classList.add("fa-brands", "fa-instagram", "fa-beat-fade", "fa-2xl");
+});
 
-    myElement.addEventListener('mouseout', function() {
-        myElement.classList.remove("fa-beat-fade");
-    });
+myElement.addEventListener('mouseout', function() {
+    myElement.classList.remove("fa-beat-fade");
+});
 
-    var element2 = document.getElementById('social2');
+var element2 = document.getElementById('social2');
 
-    element2.addEventListener('mouseover', function() {
-        myElement.classList.remove("fa-brands", "fa-instagram", "fa-2xl");
-        myElement.classList.add("fa-brands", "fa-instagram", "fa-beat-fade", "fa-2xl");
-    });
+element2.addEventListener('mouseover', function() {
+    element2.classList.remove("fa-brands", "fa-instagram", "fa-2xl"); // Use element2 here
+    element2.classList.add("fa-brands", "fa-instagram", "fa-beat-fade", "fa-2xl"); // Use element2 here
+});
 
-    element2.addEventListener('mouseout', function() {
-        myElement.classList.remove("fa-beat-fade");
-    });
+element2.addEventListener('mouseout', function() {
+    element2.classList.remove("fa-beat-fade"); // Use element2 here
+});
+
+var element3 = document.getElementById('social3');
+
+element3.addEventListener('mouseover', function() {
+    element3.classList.remove("fa-solid", "fa-person-running", "fa-2xl"); // Use element2 here
+    element3.classList.add("fa-solid", "fa-person-running", "fa-beat-fade", "fa-2xl"); // Use element2 here
+});
+
+element3.addEventListener('mouseout', function() {
+    element3.classList.remove("fa-beat-fade"); // Use element2 here
+});
+
+var element4 = document.getElementById('social4');
+
+element4.addEventListener('mouseover', function() {
+    element4.classList.remove("fa-brands", "fa-youtube", "fa-2xl"); // Use element2 here
+    element4.classList.add("fa-brands", "fa-youtube", "fa-beat-fade", "fa-2xl"); // Use element2 here
+});
+
+element4.addEventListener('mouseout', function() {
+    element4.classList.remove("fa-beat-fade"); // Use element2 here
+});
+
 });
 
 </script>
