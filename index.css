@@ -23,6 +23,10 @@ body {
 .nav li{
   display: inline-block; 
 }
+#Bio{
+  position: relative;
+  transform: translateY(-18%); 
+}
 #bottom-bor{
  margin-top: 10%;
  z-index: 10;
@@ -92,6 +96,9 @@ table{
 #texture{
   background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
 }
+#photo img{
+  border-radius: 2%; 
+}
 h1{
   color: white; 
 }
@@ -108,6 +115,26 @@ li{
 }
 ul{
   list-style: none;
+}
+.bio tr{
+ /* margin: 70% 0 0 0;  */
+  padding: 0; 
+}
+.biohead{
+  background-color: rgba(255,0,59,0.8);
+  border-radius: 2%; 
+  position: relative;
+  padding: 8px; 
+  z-index: 20; 
+}
+#biotxt{
+  position: relative;  
+  transform: translateY(100%);
+  background-color: rgba(0,0,0,0.6);
+  transition: background-color 0.2s ease-in-out;
+}
+#biotxt:hover{
+  background-color: rgba(0,0,0,0.3);
 }
 
 .speech-bubble {
