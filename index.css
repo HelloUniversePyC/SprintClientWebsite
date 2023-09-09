@@ -149,6 +149,22 @@ ul{
 #biotxt:hover{
   background-color: rgba(0,0,0,0.3);
 }
+.offer{
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out; 
+  border-radius: 2%; 
+}
+.offer:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+.glow{
+  box-shadow: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.glow:hover{
+  box-shadow: 2px 2px 1px #333333; 
+}
+
 
 .speech-bubble {
   background: #ddd;
@@ -220,7 +236,7 @@ ul{
     }
   #logotxt{
     font-family: 'Orbitron', sans-serif;
-    text-shadow: 1px 1px #808F85;
+    text-shadow: 1px 1px #fafafa;
   }
   .site-header::after {
     content: "";
