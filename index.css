@@ -316,11 +316,13 @@ ul{
   max-width: 99%;
   margin: auto;
   z-index: 1;
+  background-color: black; 
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  transition: display 0.2s ease-in-out; 
 }
 
 /* Next & previous buttons */
@@ -359,7 +361,7 @@ ul{
 
 /* Caption text */
 .text {
-  color: #100C08;
+  color: white; 
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -401,7 +403,7 @@ ul{
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 8.0s;
 }
 
 @keyframes fade {
