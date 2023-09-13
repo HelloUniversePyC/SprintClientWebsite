@@ -461,6 +461,19 @@ ul{
 .style:hover:after{
   width: 100%;
 }
+#up{
+  color: white; 
+}
+#up:hover{
+  color: black; 
+}
+.grow{
+  font-size: 25px;
+  transition: font-size 0.6s ease-in-out; 
+}
+.grow:hover{
+  font-size: 26px; 
+}
 
 /* #CE2029  Red
 #100C08 Black

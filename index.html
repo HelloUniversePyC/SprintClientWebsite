@@ -145,7 +145,7 @@
   </table>
   <br/>
   <center>
-    <h1>Sprint Club Insider Perks!: </h1>
+    <h1>Sprint Club Insider Perks! </h1>
   </center>
  <table data-aos = "fade-right" data-aos-once = "false" id= "texture" class = "services">
   <tr>
@@ -165,7 +165,7 @@
   <center>
   <table class = "testimonials">
     <br/>
-    <h1>Here's What Clients Have to Say about Doug!</h1>
+    <h1>Here's What Clients Have to Say about Sprint Club!</h1>
     <br/>
     <br/>
     <div class="speech-bubble">
@@ -189,7 +189,7 @@
   <br/>
   <br/>
   <div class = "footer">
-    <h4 style = "color:white">What are you waiting for? Start your Speed Journey Today <a href = "#">^^^</a></h4>
+    <h4 class = "grow" id = "logotxt">What are you waiting for? Start your Speed Journey Today!! <a href = "#"><i id = "up" class="fa-solid fa-arrow-up-wide-short"></i></a></h4>
   </div>
 </center>
     </body>
@@ -290,6 +290,15 @@ element4.addEventListener('mouseover', function() {
 
 element4.addEventListener('mouseout', function() {
     element4.classList.remove("fa-beat-fade"); // Use element2 here
+});
+//fa-solid fa-arrow-up-wide-short
+var element5 = document.getElementById("up");
+element5.addEventListener("mouseover", function(){
+  element5.classList.remove('fa-sold', 'fa-arrow-up-wide-short');
+  element5.classList.add("fa-solid", "fa-arrow-up-wide-short", "fa-beat-fade", "fa-duotone", "fa-xl");
+});
+element5.addEventListener("mouseout", function(){
+  element5.classList.remove('fa-beat-fade', 'fa-duotone','fa-xl'); 
 });
 
 });
