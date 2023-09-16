@@ -2,8 +2,12 @@
 body {
     margin: 0;
     /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
-    background-color: #fafafa;
+    background-color: #fafafa; 
    
+  }
+  .image{
+    background-image: url("./Images/track.jpg") !important;
+    background-size: cover !important;
   }
   .special {
     text-decoration: none;
@@ -522,6 +526,8 @@ ul{
 .slider-container
 {
   color:#000;
+  font-size: 18px;
+  font-family: Helvetica, sans-serif; 
 	margin: 0 auto;
 	padding: 0;
 	width: 550px;
@@ -587,6 +593,68 @@ ul{
 #black:hover, #red:hover, #gray:hover{
   opacity: 0.6; 
 }
+#card-head:hover{
+  opacity: 0.6 !important; 
+}
+ 
+
+.text-fade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%; 
+  background-color: #f0f0f0; /* Change this to your desired background color */
+}
+
+.text-container {
+  position: relative;
+  width: max-content;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  padding: 0; 
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.text-segment {
+  z-index: 1; 
+  text-align: center;
+  display: inline-block;
+  text-shadow: 1px 1px #fafafa;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  opacity: 0;
+  animation: fade 16s linear infinite;
+}
+.text-segement:nthchild(1){
+  animation-delay: 0; 
+}
+.text-segment:nth-child(2) {
+  animation-delay: 4s; /* Delay the start of the second segment by 4 seconds */
+}
+
+.text-segment:nth-child(3) {
+  animation-delay: 8s; /* Delay the start of the third segment by 8 seconds */
+}
+.text-segment:nth-child(4) {
+  animation-delay: 12s; /* Delay the start of the third segment by 8 seconds */
+}
+
+@keyframes fade {
+  0%, 30% {
+      opacity: 0;
+  }
+  31%, 75% {
+      opacity: 1;
+  }
+  76%, 100% {
+      opacity: 0;
+  }
+}
+
+
 /* #CE2029  Red
 #100C08 Black
 #808F85 Darker Grey
