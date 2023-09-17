@@ -718,7 +718,7 @@ table{
 
 #texture{
   background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
-  display: block; 
+  display: block !important; 
 }
 #photo img{
   border-radius: 2%; 
@@ -739,6 +739,12 @@ li{
 }
 ul{
   list-style: none;
+}
+.bio{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important; 
 }
 .bio tr{
  /* margin: 70% 0 0 0;  */
@@ -968,7 +974,7 @@ ul{
 }
 
 .style {
-  display: block;
+  display: block !important;
   border-radius: 5%;  
   line-height: 150%;
   font-size: 30px;
@@ -1341,6 +1347,12 @@ li{
 ul{
   list-style: none;
 }
+.bio{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important; 
+}
 .bio tr{
  /* margin: 70% 0 0 0;  */
   padding: 0; 
@@ -1557,7 +1569,7 @@ ul{
 }
 
 .style {
-  display: block;
+  display: block !important;
   border-radius: 5%;  
   line-height: 150%;
   font-size: 50px;
