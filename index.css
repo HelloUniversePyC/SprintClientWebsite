@@ -723,9 +723,6 @@ table{
   justify-content: center !important;
   align-items: center !important;
 }
-#texture tr td{
-  flex-grow: 3; 
-}
 #photo img{
   border-radius: 2%; 
 }
@@ -783,6 +780,7 @@ ul{
 .glow{
   box-shadow: none;
   transition: box-shadow 0.2s ease-in-out;
+  flex-grow: 3; 
 }
 .glow:hover{
   box-shadow: 2px 2px 1px #333333; 
@@ -1048,14 +1046,14 @@ ul{
 	padding: 20px;
 	margin-top: 50px;
 	position: relative;
-	width: 600px;
+	width: 400px;
 }
 
 #slider li
 {
 	float: left;
 	position: relative;
-	width: 600px;
+	width: 400px;
 	display: inline-block;
 	height: 200px;
 }
