@@ -235,7 +235,9 @@ background-color:#CE2029;
 width: 100%;
 text-align: center;
 }
-
+#dropdown{
+  visibility: hidden; 
+}
 .site-header { 
   transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
   border-bottom: 1px solid #DCE0D9;
@@ -316,22 +318,20 @@ text-align: center;
 .site-identity img:hover{
   background-color: rgba(0,0,0,0.5);
 }
-=
+
 .site-navigation {
-  float: right;
-  display: none; 
-  transition: display 0.2s ease-in-out; 
+  float: right; 
 }
 
 
 .site-navigation ul, li {
-  display: block; 
+  display: inline-block; 
   margin: 0; 
   padding: 0;
 }
 
 .site-navigation li {
-  display: block;
+  display: inline-block;
   margin: 1.4em 1em 1em 1em;
   font-weight: 150; 
   font-family: "Roboto", sans-serif;
@@ -464,7 +464,6 @@ position: relative;
 width: 600px;
 display: inline-block;
 height: 200px;
-}
 
 #slider ul
 {
