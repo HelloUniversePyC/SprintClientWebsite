@@ -24,6 +24,20 @@ body {
   background-size: 100% 2px;
   color: #ccc;
 }
+
+.nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nav i {
+  font-size: 40px; /* Adjust icon size for mobile */
+}
 .nav li{
 display: inline-block; 
 }
@@ -34,6 +48,9 @@ transform: translateY(-18%);
 #bottom-bor{
 margin-top: 10%;
 z-index: 10;
+}
+.nav{
+  display: flex; 
 }
 .divider
 {
@@ -299,17 +316,24 @@ text-align: center;
 .site-identity img:hover{
   background-color: rgba(0,0,0,0.5);
 }
+=
 .site-navigation {
   float: right;
+  display: none; 
+  transition: display 0.2s ease-in-out; 
+}
+.site-navigation.show {
+  display: flex; 
 }
 
 .site-navigation ul, li {
+  display: block; 
   margin: 0; 
   padding: 0;
 }
 
 .site-navigation li {
-  display: inline-block;
+  display: block;
   margin: 1.4em 1em 1em 1em;
   font-weight: 150; 
   font-family: "Roboto", sans-serif;
@@ -608,6 +632,9 @@ https://www.athleticlab.com/# */
     background-color: #fafafa; 
    
   }
+  #cincopa_a400c9{
+    transform: TranslateY(20%); 
+  }
   .image{
     background-image: url("./Images/track.jpg") !important;
     background-size: cover !important;
@@ -658,6 +685,11 @@ https://www.athleticlab.com/# */
   width: 90%;
   height: 1px;
   background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+#dropdown{
+  font-size: 40px; 
+  color: white; 
+  cursor: pointer;
 }
 table{
   width: 100%; 
@@ -838,13 +870,14 @@ ul{
 
   .site-header { 
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+    display: flex;
+    height: auto; 
     border-bottom: 1px solid #DCE0D9;
     background-color: #CE2029;
     text-shadow: none; 
     width: 100%;
     color: black; 
     padding: .2em 0.2em; 
-    height: 40%; 
     position: fixed;
     z-index: 10; 
     text-decoration: none;
@@ -927,11 +960,14 @@ ul{
   }
   
   .site-navigation li {
-    display: inline-block;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
     margin: 1.4em 1em 1em 1em;
     font-weight: 150; 
     font-family: "Roboto", sans-serif;
   }
+ 
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -1221,6 +1257,7 @@ https://www.athleticlab.com/# */
     margin: 0;
     /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
     background-color: #fafafa; 
+    overflow-x:hidden; 
    
   }
   .image{
@@ -1447,10 +1484,16 @@ ul{
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
     border-bottom: 1px solid #DCE0D9;
     background-color: #CE2029;
+    height: auto; 
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important; 
     text-shadow: none; 
     width: 100%;
     color: black; 
-    padding: .2em 0.2em; 
+    padding: .2em 0.2em;
+    overflow: hidden; 
     height: 40%; 
     position: fixed;
     z-index: 10; 
@@ -1461,7 +1504,11 @@ ul{
     filter: invert(100%);
     color: #fafafa;
     text-shadow: 1px 1px #808F85;
-    
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important; 
+    text-shadow: none; 
     }
   #logotxt{
     font-family: 'Orbitron', sans-serif;
@@ -1469,7 +1516,6 @@ ul{
   }
   .site-header::after {
     content: "";
-    display: table;
     clear: both;
   }
 
@@ -1504,6 +1550,9 @@ ul{
   
   .site-identity {
     float: left;
+    flex: 1; 
+    display: flex;
+    align-items: center; 
   }
   
   .site-identity h1 {
@@ -1523,6 +1572,9 @@ ul{
     background-color: rgba(0,0,0,0.5);
   }
   .site-navigation {
+    flex: 1; 
+    display: flex;
+    align-items:center; 
     float: right;
   }
   
