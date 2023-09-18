@@ -322,9 +322,7 @@ text-align: center;
   display: none; 
   transition: display 0.2s ease-in-out; 
 }
-.site-navigation.show {
-  display: flex; 
-}
+
 
 .site-navigation ul, li {
   display: block; 
@@ -657,9 +655,7 @@ https://www.athleticlab.com/# */
 .services tr td{
   display: block !important; 
 }
-.nav li{
-  display: inline-block; 
-}
+
 #Bio{
   position: relative;
   transform: translateY(-18%); 
@@ -883,23 +879,11 @@ ul{
     z-index: 10; 
     text-decoration: none;
   }
-  .site-header.transparent {
-    background-color: transparent; 
-    filter: invert(100%);
-    color: #fafafa;
-    text-shadow: 1px 1px #808F85;
-    
-    }
   #logotxt{
     font-family: 'Orbitron', sans-serif;
     text-shadow: 1px 1px #fafafa;
   }
-  .site-header::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
+  
   .button {
     transition: border 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
     background-color: #CE2029; /* Green */
@@ -925,7 +909,7 @@ ul{
   }
   #SignUp{
     position: absolute;
-    margin-top: 100px; 
+    margin-top: -10%; 
     bottom: 10px; /* Adjust this value for your design */
     left: 25%; /* Center the button horizontally */
   /*transform: translateX(-50%); Necessary to truly center the button */
@@ -953,21 +937,28 @@ ul{
   }
   .site-navigation {
     float: right;
+    display: none;
+    max-height: 0px; 
+    visibility: hidden;  
+    opacity: 0;
+    transition: max-height 0.4s ease-in-out; 
+  }
+  .site-navigation.show{
+    display: flex;
+    visibility: visible;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 1; 
+    max-height: 400px; 
   }
   
   .site-navigation ul, li {
     margin: 0; 
     padding: 0;
+    flex: 2; 
   }
   
-  .site-navigation li {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    margin: 1.4em 1em 1em 1em;
-    font-weight: 150; 
-    font-family: "Roboto", sans-serif;
-  }
+  
  
 /* Slideshow container */
 .slideshow-container {
@@ -1280,8 +1271,16 @@ https://www.athleticlab.com/# */
     background-size: 100% 2px;
     color: #ccc;
 }
-.nav li{
-  display: inline-block; 
+
+
+.site-navigation.show{
+  display: flex;
+  visibility: visible; 
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.4em 1em 1em 1em;
+  font-weight: 150; 
+  font-family: "Roboto", sans-serif;
 }
 #Bio{
   position: relative;
