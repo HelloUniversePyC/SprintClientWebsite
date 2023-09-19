@@ -66,7 +66,7 @@ position: absolute;
 top: 0;
 left: 5%;
 right: 5%;
-width: 90%;
+width: 100vw; 
 height: 1px;
 background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }
@@ -79,13 +79,13 @@ height: 100%;
 /*filter: saturate(200%);*/
 filter: grayscale(100%) sepia(100%) hue-rotate(180deg);
 height: 120%;
-width: 2000%;
+max-width: 2000%;
 padding: 0;
 margin: 1%; 
 }
 .layout img{
-width: 30%;
-height: 25%; 
+max-width: 30%;
+max-height: 25%; 
 padding: 0; 
 }
 .translate{
@@ -237,13 +237,14 @@ text-align: center;
 }
 #dropdown{
   visibility: hidden; 
+  display: none; 
 }
 .site-header { 
   transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
   border-bottom: 1px solid #DCE0D9;
   background-color: #CE2029;
   text-shadow: none; 
-  width: 100%;
+  min-width: 100vw; 
   color: black; 
   padding: .2em 0.2em; 
   height: 20%; 
@@ -440,104 +441,119 @@ transition: font-size 0.6s ease-in-out;
 .grow:hover{
 font-size: 26px; 
 }
+/**** slider ****/
 
-
-#slider, ul
+#text-slider, ul
 {
-height: 200px;
+	height: 300px;
 }
 
-#slider
+#text-slider
 {
-margin: auto;
-overflow: hidden;
-padding: 20px;
-margin-top: 50px;
-position: relative;
-width: 600px;
+	margin: auto;
+	overflow: hidden; 
+	position: relative;
+	max-width: 600px;
 }
 
-#slider li
+#text-slider li
 {
-float: left;
-position: relative;
-width: 600px;
-display: inline-block;
-height: 200px;
+	float: left;
+	position: relative;
+	width: 600px;
+	display: inline-block;
+	height: 200px;
+}
 
-#slider ul
+#text-slider ul
 {
-list-style: none;
-position: absolute;
-left: 0px;
-top: 0px;
-width: 9000px;
-transition: left .2s linear;
--moz-transition: left .2s linear;
--o-transition: left .2s linear;
--webkit-transition: left .2s linear;
-margin-left: -25px;
-font-family: open sans;
-color: #666;
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9000px;
+	transition: left .3s linear;
+	-moz-transition: left .3s linear;
+	-o-transition: left .3s linear;
+	-webkit-transition: left .3s linear;
+	margin-left: -25px;
+  font-family: century gothic;
+  color: #666;
 }
 
 /*** Content ***/
 
-.slider-container
+.text-slider-container
 {
-color:#000;
-font-size: 18px;
-font-family: Helvetica, sans-serif; 
-margin: 0 auto;
-padding: 0;
-width: 550px;
-min-height: 180px;
-text-align:center;
+	margin: 0 auto;
+	padding: 0;
+	width: 550px;
+  min-height: 180px;
 }
 
-.slider-container h2
+.text-slider-container h4
 {
- color: #fff;
+  font-family: 'Work sans', sans-serif;
+ 	color: #000;
+  font-weight:400;
+  font-size: 20px;
+}
+.text-slider-container h5 {
+	text-align: right;
+	font-weight:normal;
+	font-family: 'Questrial', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+  color:#EE2D24;
 }
 
-.slider-container  p
+.text-slider-container  p
 {
-margin: 10px 25px;
-font-weight: semi-bold;
-line-height: 150%;
+  text-indent: 40px;
+	font-family: 'Questrial', sans-serif;
+	font-size: 15px;
+	color: #434343;
+	line-height: 200%;
+	margin:0 auto 0 auto;
+	margin: 10px 25px;
+	text-align: justify;
 }
 
 /*** target hooks ****/
 
 @-webkit-keyframes slide-animation {
-0% {opacity:0;}
-2% {opacity:1;}
-20% {left:0px; opacity:1;}
-22.5% {opacity:0.6;}
-25% {left:-600px; opacity:1;}
-45% {left:-600px; opacity:1;}
-47.5% {opacity:0.6;}
-50% {left:-1200px; opacity:1;}
-70% {left:-1200px; opacity:1;}
-72.5% {opacity:0.6;}
-75% {left:-1800px; opacity:1;}
-95% {opacity:1;}
-98% {left:-1800px; opacity:0;} 
-100% {left:0px; opacity:0;}
+	0% {opacity:0;}
+	2% {opacity:1;}
+	20% {left:0px; opacity:1;}
+	22.5% {opacity:0.6;}
+	25% {left:-600px; opacity:1;}
+	45% {left:-600px; opacity:1;}
+	47.5% {opacity:0.6;}
+	50% {left:-1200px; opacity:1;}
+	70% {left:-1200px; opacity:1;}
+	72.5% {opacity:0.6;}
+	75% {left:-1800px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-1800px; opacity:0;} 
+	100% {left:0px; opacity:0;}
 }
 
-#slider ul
+#text-slider ul
 {
--webkit-animation: slide-animation 20s infinite;
+	-webkit-animation: slide-animation 25s infinite;
 }
 
-#slider ul:hover
+/* use to paused the content on mouse over */
+
+#text-slider ul:hover
 {
--moz-animation-play-state: paused;
--webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
 }
 
-/*SignUp CSS*/
+
+
 #black{
 background-color: #100C08 !important; 
 transition: background-color 0.4s ease-in-out;
@@ -683,13 +699,14 @@ https://www.athleticlab.com/# */
 }
 #dropdown{
   visibility: visible;
+  display: inline-block; 
   font-size: 40px; 
   color: white; 
   cursor: pointer;
   z-index: 40; 
 }
 table{
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
 #globe{
@@ -752,8 +769,15 @@ table{
   justify-content: center !important;
   align-items: center !important;
 }
-#photo img{
+#photo1 img{
+  border-radius: 2%;
+  max-width: 30vw;
+  max-height: 50vw; 
+}
+#photo2 img{
   border-radius: 2%; 
+  max-width: 30vw;
+  max-height: 50vw; 
 }
 h1{
   color: white; 
@@ -872,7 +896,7 @@ ul{
     border-bottom: 1px solid #DCE0D9;
     background-color: #CE2029;
     text-shadow: none; 
-    width: 100%;
+    width: 100vw; 
     color: black; 
     padding: .2em 0.2em; 
     position: fixed;
@@ -909,10 +933,9 @@ ul{
   }
   #SignUp{
     position: absolute;
-    margin-top: -10%; 
-    bottom: 10px; /* Adjust this value for your design */
-    left: 25%; /* Center the button horizontally */
-  /*transform: translateX(-50%); Necessary to truly center the button */
+    margin-top: -50%; 
+    bottom: 10px; 
+    left: 25%; 
 }
   
   .site-identity {
@@ -937,15 +960,15 @@ ul{
   }
   .site-navigation {
     float: right;
-    display: none;
+    display: none !important;
     max-height: 0px; 
-    visibility: hidden;  
+    visibility: hidden !important;  
     opacity: 0;
     transition: max-height 0.4s ease-in-out; 
   }
   .site-navigation.show{
-    display: flex;
-    visibility: visible;
+    display: flex !important;
+    visibility: visible !important;
     flex-direction: row;
     justify-content: center;
     opacity: 1; 
@@ -1062,6 +1085,7 @@ ul{
 }
 
 
+
 #slider, ul
 {
 	height: 200px;
@@ -1074,14 +1098,14 @@ ul{
 	padding: 20px;
 	margin-top: 50px;
 	position: relative;
-	width: 400px;
+	width: 600px;
 }
 
 #slider li
 {
 	float: left;
 	position: relative;
-	width: 400px;
+	width: 600px;
 	display: inline-block;
 	height: 200px;
 }
@@ -1107,8 +1131,6 @@ ul{
 .slider-container
 {
   color:#000;
-  font-size: 18px;
-  font-family: Helvetica, sans-serif; 
 	margin: 0 auto;
 	padding: 0;
 	width: 550px;
@@ -1149,7 +1171,7 @@ ul{
 
 #slider ul
 {
-	-webkit-animation: slide-animation 20s infinite;
+	-webkit-animation: slide-animation 5s infinite;
 }
 
 #slider ul:hover
@@ -1157,6 +1179,7 @@ ul{
 	-moz-animation-play-state: paused;
 	-webkit-animation-play-state: paused;
 }
+
 
 /*SignUp CSS*/
 #black{
@@ -1368,6 +1391,7 @@ table{
 
 #texture{
   background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
+  width: 100vw; 
 }
 #photo img{
   border-radius: 2%; 
@@ -1477,7 +1501,7 @@ ul{
 
 .footer{
   background-color:#CE2029;
-  width: 100%;
+  width: 100vw; 
   text-align: center;
 }
 
@@ -1574,7 +1598,8 @@ ul{
   }
   .site-navigation {
     flex: 1; 
-    display: flex;
+    display: none;
+    visibility: hidden; 
     align-items:center; 
     float: right;
   }
