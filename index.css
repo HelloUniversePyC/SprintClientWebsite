@@ -682,6 +682,7 @@ https://www.athleticlab.com/# */
   background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }
 #dropdown{
+  visibility: visible;
   font-size: 40px; 
   color: white; 
   cursor: pointer;
@@ -1249,6 +1250,7 @@ https://www.athleticlab.com/# */
     /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
     background-color: #fafafa; 
     overflow-x:hidden; 
+    width: 90%; 
    
   }
   .image{
