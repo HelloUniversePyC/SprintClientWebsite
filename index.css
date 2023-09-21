@@ -168,6 +168,10 @@ list-style: none;
 /* margin: 70% 0 0 0;  */
 padding: 0; 
 }
+.mobile-view{
+  display: none;
+  visibility: hidd
+}
 .biohead{
 background-color: rgba(255,0,59,0.8);
 border-radius: 2%; 
@@ -863,6 +867,7 @@ ul{
 #biotxt:hover{
   background-color: rgba(0,0,0,0.3);
 }
+
 .offer{
   background-color: transparent;
   transition: background-color 0.2s ease-in-out; 
@@ -1451,15 +1456,24 @@ table p{
 li{
   padding: 12%;
 }
+
 ul{
   list-style: none;
 }
 .bio{
   display: block; 
+  height: 150vh; 
+}
+.bio td:nth-child(odd) {
+  margin-bottom: 20px !important; /* Add some space between the top and bottom sections */
 }
 .bio tr{
  /* margin: 70% 0 0 0;  */
-  padding: 0; 
+  padding: 0 !important; 
+}
+.bio td{
+  padding: 0 !important;
+  clear:both !important;
 }
 .stylechange{
   display: flex !important;
@@ -1474,6 +1488,14 @@ ul{
   position: relative;
   z-index: 20; 
 }
+.mobile-view{
+  visibility: visible;
+  display: block;
+}
+.text{
+  visibility: hidden;
+  display: none; 
+}
 #biotxt{
   position: relative;
   height: 1vw !important;  
@@ -1483,6 +1505,7 @@ ul{
 #biotxt:hover{
   background-color: rgba(0,0,0,0.3);
 }
+
 .offer{
   background-color: transparent;
   transition: background-color 0.2s ease-in-out; 
@@ -1605,8 +1628,8 @@ ul{
     border-radius: 10%;
     font-family: Ubuntu;
     box-shadow: 2px 2px 1px #100C08;
-    
   }
+ 
   .button:hover{
     border: #ccc;
     box-shadow: 2px 2px 1px #ccc;
