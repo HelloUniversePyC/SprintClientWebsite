@@ -88,6 +88,10 @@ max-width: 30%;
 max-height: 25%; 
 padding: 0; 
 }
+#altSignUp{
+  display: none;
+  visibility: hidden; 
+}
 .translate{
 position: relative; 
 transform: translateX(70%) translateY(-95%); 
@@ -660,7 +664,7 @@ https://www.athleticlab.com/# */
   }
   #cincopa_a400c9{
     transform: TranslateY(20%); 
-    width: 120vw; 
+    width: 100vw; 
   }
   .image{
     background-image: url("./Images/track.jpg") !important;
@@ -725,6 +729,15 @@ https://www.athleticlab.com/# */
 table{
   width: 100%;
   height: 100%;
+}
+#altSignUp{
+  visibility: visible;
+  display: block; 
+  width: 100vw; 
+  color: inherit;
+  text-decoration: none;
+  text-shadow: 1px 1px #fafafa; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
 .globe-container{
   display: flex;
@@ -919,12 +932,12 @@ ul{
 
   .site-header { 
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
-    display: flex;
-    height: 10%; 
+    display: block; 
+    height: 30%; 
     border-bottom: 1px solid #DCE0D9;
     background-color: #CE2029;
     text-shadow: none; 
-    width: 100vw; 
+    width: 100vw !important; 
     color: black; 
     padding: .2em 0.2em; 
     position: fixed;
@@ -960,10 +973,8 @@ ul{
     transform: TranslateY(40%)
   }
   #SignUp{
-    position: absolute;
-    margin-top: -50%; 
-    bottom: 10px; 
-    left: 25%; 
+    display: none;
+    visibility:hidden;
 }
   
   .site-identity {
@@ -1334,7 +1345,6 @@ https://www.athleticlab.com/# */
 }
 #Bio{
   position: relative;
-  transform: translateY(-18%); 
 }
 #bottom-bor{
  margin-top: 10%;
@@ -1445,25 +1455,28 @@ ul{
   list-style: none;
 }
 .bio{
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important; 
+  display: block; 
 }
 .bio tr{
  /* margin: 70% 0 0 0;  */
   padding: 0; 
 }
+.stylechange{
+  display: flex !important;
+  flex-direction:column !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+}
 .biohead{
   background-color: rgba(255,0,59,0.8);
   border-radius: 2%; 
   position: relative;
-  padding: 8px; 
   z-index: 20; 
 }
 #biotxt{
-  position: relative;  
-  transform: translateY(60%);
+  position: relative;
+  height: 1vw !important;  
   background-color: rgba(0,0,0,0.6);
   transition: background-color 0.2s ease-in-out;
 }
