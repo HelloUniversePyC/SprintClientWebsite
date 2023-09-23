@@ -290,16 +290,16 @@ text-align: center;
   text-shadow: 1px 1px #808F85;
   
   }
-#logotxt{
-  font-family: 'Orbitron', sans-serif;
-  text-shadow: 1px 1px #fafafa;
-}
+
 .site-header::after {
   content: "";
   display: table;
   clear: both;
 }
-
+#logotxt{
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 1px 1px #fafafa;
+}
 .button {
   transition: border 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
   background-color: #CE2029; /* Green */
@@ -964,6 +964,7 @@ ul{
     text-shadow: 1px 1px #fafafa;
   }
   
+  
   .button {
     transition: border 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
     background-color: #CE2029; /* Green */
@@ -1595,14 +1596,14 @@ ul{
 
   .site-header { 
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
-    display: block; 
-    height: 30%; 
+    display: inline-block; 
+    height: 150vh !important;
     border-bottom: 1px solid #DCE0D9;
     background-color: #CE2029;
     text-shadow: none; 
-    width: 100vw !important; 
+    width: 100vw !important;  
     color: black; 
-    padding: .2em 0.2em; 
+    padding: .01em 0.01em; 
     position: fixed;
     z-index: 10; 
     text-decoration: none;
@@ -1661,18 +1662,20 @@ ul{
     background-color: rgba(0,0,0,0.5);
   }
   .site-navigation {
-    float: none; 
+    float: none !important; 
     display: none !important;
-    max-height: 0px; 
-    visibility: hidden !important;  
-    opacity: 0;
+    visibility: hidden !important; 
+    z-index: 50; 
+    margin-top: 50%;  
+    /*
+    max-height: 0 px; 
     transition: max-height 0.4s ease-in-out; 
+    */
   }
   .site-navigation.show{
-    display: block;
+    display: block !important;
     visibility: visible; 
-    opacity: 1; 
-    max-height: 400px; 
+    max-height: 500px; 
   }
   
   .site-navigation ul, li {
@@ -1996,16 +1999,6 @@ https://www.athleticlab.com/# */
     color: #ccc;
 }
 
-
-.site-navigation.show{
-  display: flex;
-  visibility: visible; 
-  flex-direction: column;
-  justify-content: center;
-  margin: 1.4em 1em 1em 1em;
-  font-weight: 150; 
-  font-family: "Roboto", sans-serif;
-}
 #Bio{
   position: relative;
 }
@@ -2283,14 +2276,45 @@ ul{
     justify-content: center !important;
     align-items: center !important; 
     text-shadow: none; 
+    object-fit: contain !important; 
     width: 100%;
     color: black; 
     padding: .2em 0.2em;
-    overflow: hidden; 
-    height: 40%; 
-    position: fixed;
+    overflow: hidden;
+    height: 5% !important; 
+    position: fixed !important;
     z-index: 10; 
     text-decoration: none;
+    transition: height 0.2s ease-in-out; 
+  }
+  .site-header.grow{
+    height: 45% !important; 
+  }
+  .site-navigation {
+    flex-direction: column; 
+    max-height: 0; /* Set the initial max-height to 0 */
+    transition: max-height 0.4s ease-in-out; 
+    display:  none !important;
+    visibility: hidden !important; 
+    z-index: 50; 
+    margin: 1.4em 1em 1em 1em;
+    min-height: 0; 
+  }
+  .nav{
+    display: block !important; 
+  }
+  .site-navigation.show{
+    display: block; 
+    visibility: visible !important; 
+    margin: 1.4em 1em 1em 1em;
+    padding: 10px; 
+    font-weight: 150; 
+    max-height: 500px; 
+    font-family: "Roboto", sans-serif;
+    margin-top: 30% !important; 
+  }
+  header{
+    display: block !important; 
   }
   #logotxt{
     font-family: 'Orbitron', sans-serif;
@@ -2367,7 +2391,7 @@ ul{
   }
   
   .site-navigation li {
-    display: inline-block;
+    display: block;
     margin: 1.4em 1em 1em 1em;
     font-weight: 150; 
     font-family: "Roboto", sans-serif;

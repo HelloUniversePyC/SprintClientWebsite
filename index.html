@@ -19,6 +19,7 @@
               <a href="./index.html"><img src=./Images/logo.webp.webp alt="Speed Specialist" /></a>
               <h1 class = "special" id = "logotxt" ><a href="#" style = "color:black">Speed Specialist</a></h1>
               <i id = "dropdown" class="fa-solid fa-caret-down fa-beat" style="color: #ecedee;"></i>
+           <!--class="fa-solid fa-caret-down fa-beat"-->
             </div>  
             <nav class="site-navigation">
               <ul class="nav">
@@ -200,12 +201,14 @@
 <script>
   AOS.init();
 //Code for Dropdown:
+
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("dropdown");
   const navMenu = document.querySelector(".site-navigation");
-
+  const bar = document.querySelector(".site-header")
   menuToggle.addEventListener("click", function () {
     navMenu.classList.toggle("show");
+    bar.classList.toggle("grow")
   });
 });
 document.addEventListener('DOMContentLoaded', function() {
