@@ -1604,7 +1604,7 @@ ul{
   .site-header { 
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
     display: inline-block; 
-    height: 150vh !important;
+    height: 300vh !important;
     border-bottom: 1px solid #DCE0D9;
     background-color: #CE2029;
     text-shadow: none; 
