@@ -14,20 +14,22 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class = "image">
-    <header class="site-header">
-        <div class="site-identity">
-          <a href="./index.html"><img src=./Images/logo.webp.webp alt="Speed Specialist" /></a>
-          <h1 class = "special" id = "logotxt" ><a href="#" style = "color:black">Speed Specialist</a></h1>
-        </div>  
-        <nav class="site-navigation">
-          <ul class="nav">
-            <li  style = "text-align:center"><a href ="https://www.instagram.com/sprintclub.co/"><i id = "social" class="fa-brands fa-instagram fa-2xl" style="color: white"></i><br/><p style = "font-size:12px;" class = "special">@SprintCo</p></a></li> 
-            <li style = "text-align:center"><a href ="https://www.instagram.com/speedspecialist/"><i id = "social2" class="fa-brands fa-instagram fa-2xl" style="color: white"></i><br/><p style = "font-size:12px" class = "special">@SpeedSpecialist</p></a></li> 
-            <li style = "text-align:center"><a class = "special" href="https://www.thesprintproject.co/"><i id = "social3" style = "color:white" class="fa-solid fa-person-running fa-2xl"></i><br/><strong><p class = "special" style = "font-size:12px">Visit Our Flagship Website</p></strong></a></li> 
-            <li  style = "text-align:center"><a href ="https://www.instagram.com/sprintclub.co/"><i id = "social4" class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i><br/><p style = "font-size:12px" class = "special">Youtube Channel!</p></a></li> 
-          </ul>
-        </nav>
-      </header>
+  <header class="site-header">
+    <div class="site-identity">
+      <a href="./index.html"><img src=./Images/logo.webp.webp alt="Speed Specialist" /></a>
+      <h1 class = "special" id = "logotxt" ><a href="#" style = "color:black">Speed Specialist</a></h1>
+      <i id = "dropdown" class="fa-solid fa-caret-down fa-beat" style="color: #ecedee;"></i>
+   <!--class="fa-solid fa-caret-down fa-beat"-->
+    </div>  
+    <nav class="site-navigation">
+      <ul class="nav">
+        <li  style = "text-align:center"><a href ="https://www.instagram.com/sprintclub.co/"><i id = "social" class="fa-brands fa-instagram fa-2xl" style="color: white"></i><br/><p style = "font-size:14px;font-weight:500;z-index:20;" class = "special">@SprintCo</p></a></li> 
+        <li style = "text-align:center"><a href ="https://www.instagram.com/speedspecialist/"><i id = "social2" class="fa-brands fa-instagram fa-2xl" style="color: white"></i><br/><p style = "font-size:14px;z-index:20;" class = "special">@SpeedSpecialist</p></a></li> 
+        <li style = "text-align:center"><a class = "special" href="https://www.thesprintproject.co/"><i id = "social3" style = "color:white" class="fa-solid fa-person-running fa-2xl"></i><br/><strong><p class = "special" style = "font-size:14px;z-index:20;">Visit Our Flagship Website</p></strong></a></li> 
+        <li  style = "text-align:center"><a href ="https://www.instagram.com/sprintclub.co/"><i id = "social4" class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i><br/><p style = "font-size:14px;z-index:20;" class = "special">Youtube Channel!</p></a></li> 
+      </ul>
+    </nav>
+  </header>
       <br/>
       <br/>
       <br/>
@@ -43,12 +45,13 @@
     </div>
   </center>
       <br/>
+      <center>
       <div class = "plans">
-      <div class="container bg-light py-5">
+      <div data-aos = "fade-left" class="container bg-light py-5">
         <div class="row">
           <div class="col-md-4 col-sm-6">
             <div class="card bg-warning border-0 rounded-0 shadow">
-              <div id = "card-head" style = "background-color:#100C08;"class="card-header text-center text-white border-0">
+              <div data-aos = "fade-right" id = "card-head" style = "background-color:#100C08;"class="card-header text-center text-white border-0">
                 <h2><strong>BASIC</strong></h2>
                 <p>LOREM IPSUM DOLOR SIT</p>
                 <i class="fa fa-star"></i>
@@ -67,9 +70,9 @@
             </div>
           </div>
             
-          <div class="col-md-4 col-sm-6 shiftdown">
+          <div data-aos = "fade-left"  class="col-md-4 col-sm-6 shiftdown">
             <div class="card bg-success border-0 rounded-0 shadow">
-              <div id = "card-head" style = "background-color:#FF003B;" class="card-header text-center text-white border-0">
+              <div  id = "card-head" style = "background-color:#FF003B;" class="card-header text-center text-white border-0">
                 <h2><strong>PREMIUM</strong></h2>
                 <p>LOREM IPSUM DOLOR SIT</p>
                 <i class="fa fa-star text-warning mr-2"></i>
@@ -87,9 +90,9 @@
                 <a id = "red" href="#" class="btn btn-block bg-success text-white">Sign-Up!</a></div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 shiftdown">
+          <div data-aos = "fade-right" class="col-md-4 col-sm-12 shiftdown">
             <div class="card bg-info border-0 rounded-0 shadow">
-              <div id = "card-head" style = "background-color:#808F85" class="card-header text-center text-white border-0">
+              <div   id = "card-head" style = "background-color:#808F85" class="card-header text-center text-white border-0">
                 <h2><strong>BUSINESS</strong></h2>
                 <p>LOREM IPSUM DOLOR SIT</p>
                 <i class="fa fa-star text-warning mr-2"></i>
@@ -113,6 +116,7 @@
         </div>
       </div>
     </div>
+  </center>
     <br/>
     <br/>
     <br/>
@@ -126,9 +130,15 @@
   
   document.addEventListener('DOMContentLoaded', function() {
     
+ 
+  const menuToggle = document.getElementById("dropdown");
+  const navMenu = document.querySelector(".site-navigation");
+  const bar = document.querySelector(".site-header")
+  menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("show");
+    bar.classList.toggle("grow")
+  });
   let isScrolling;
-    
-  
   window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.site-header');
   const scrollValue = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
