@@ -2294,7 +2294,7 @@ ul{
     color: black; 
     padding: .2em 0.2em;
     overflow: hidden;
-    height: 7% !important; 
+    height: 7vh !important; 
     position: fixed !important;
     z-index: 10; 
     text-decoration: none;
