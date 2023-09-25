@@ -606,6 +606,15 @@ opacity: 0.6;
 #card-head:hover{
 opacity: 0.6 !important; 
 }
+#card-head i{
+  color: black !important;
+  scale: 1.5 !important; 
+}
+#card-head section i{
+  color: white !important; 
+  scale: 1.5 !important; 
+}
+
 
 
 .text-fade {
@@ -1241,6 +1250,9 @@ ul{
 
 
 /*SignUp CSS*/
+#blacky{
+  color: black !important; 
+}
 #black{
   background-color: #100C08 !important; 
   transition: background-color 0.4s ease-in-out;
