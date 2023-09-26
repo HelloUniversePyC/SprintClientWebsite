@@ -681,7 +681,7 @@ animation-delay: 12s; /* Delay the start of the third segment by 8 seconds */
 
 /* Copy Website 
 https://www.athleticlab.com/# */ 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
   body {
     margin: 0;
     /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
@@ -1357,7 +1357,7 @@ https://www.athleticlab.com/# */
 }
 
 
-@media(max-width: 480px){
+@media screen and (max-width: 480px){
   body {
     margin: 0;
     /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
