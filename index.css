@@ -2290,6 +2290,12 @@ ul{
   width: 100vw; 
   text-align: center;
 }
+.linky1{
+width: 50vw !important; 
+}
+.linky2{
+ width: 60vw !important;
+}
 
   .site-header { 
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
