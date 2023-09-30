@@ -76,7 +76,8 @@
                 <br class = "mobile-view"/>
                 <p class="text-center font-weight-bolder text-dark h1 display-4 mb-0">$27</p>
                 <p class="small text-center font-weight-bolder text-secondary">per month</p>
-                <a style ="font-family: roboto;font-size:20px; id = "black" href="https://www.thesprintproject.co/offers/R9hYaWrS/checkout" class="btn btn-block bg-warning text-black"><strong>Sign up!</strong></a></div>
+                <a style ="font-family: roboto;font-size:20px;color:white" id = "black" href="https://www.thesprintproject.co/offers/R9hYaWrS/checkout" class="btn btn-block bg-warning text-black"><strong>Sign up!</strong></a></div>
+                <p>Use our Flagship Website to Sign up! <i class="fa-solid fa-arrow-up"></i></p>
             </div>
           </div>
             
@@ -105,8 +106,8 @@
                 <br class = "mobile-view"/>
                 <p class="text-center font-weight-bolder text-dark h1 display-4 mb-0">$275</p>
                 <p class="small text-center font-weight-bolder text-secondary">per month</p>
-                <a style ="font-family: roboto;font-size:20px;" id = "red" href="https://www.thesprintproject.co/offers/R9hYaWrS/checkout" class="btn btn-block bg-success text-white"><strong>Sign up!</strong></a></div>
-            </div>
+                <a style ="font-family: roboto;font-size:20px;" id = "red" href="#paypal-button-container" class="btn btn-block bg-success text-white"><strong>Sign up! (See options) <i style = "color:black" class="fa-solid fa-arrow-down"></i></strong></a></div>
+              </div>
           </div>
           <div data-aos = "fade-right" class="col-md-4 col-sm-12 shiftdown">
             <div class="card bg-info border-0 rounded-0 shadow">
@@ -138,11 +139,23 @@
                 <br class = "mobile-view"/>
                 <p class="text-center font-weight-bolder text-dark h1 display-4 mb-0">$288</p>
                 <p class="small text-center font-weight-bolder text-secondary">per day</p>
-                <a style ="font-family: roboto;font-size:20px;"id = "gray" href="https://www.thesprintproject.co/offers/R9hYaWrS/checkout" class="btn btn-block bg-success text-white"><strong>Sign up!</strong></a></div>
+                <a style ="font-family: roboto;font-size:20px;"id = "gray" href="#paypal-button-container" class="btn btn-block bg-success text-white"><strong>Sign up! (See options)<i style = "color:black" class="fa-solid fa-arrow-down"></i></strong></a></div>
             </div>
           </div>
         </div>
+        <center>
+        <div id="paypal-button-container"></div>
+
+      <!-- Include the PayPal JavaScript SDK. Replace `YOUR_CLIENT_ID` with your client ID.-->
+      <!-- Note that `enable-funding=venmo` is added as a query parameter -->
+      <script src="https://www.paypal.com/sdk/js?client-id=AQlrytqQ-vfs6z-ZlV6lcy6OZ5HNLbIB63UBKrloguHX_QieGyoKTT7hxUW5QSSTcPyLHMLCJjpLJrSJ"></script>
+      
+      <script>
+        // Render the Venmo button into #paypal-button-container
+        paypal.Buttons().render('#paypal-button-container')
+      </script>
       </div>
+      
     </div>
   </center>
     <br/>

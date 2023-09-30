@@ -58,7 +58,10 @@ position: relative;
 margin-top: 19.6%;
 height: 1px;
 }
+#paypal-button-container{
+  margin-left: 35% !important; 
 
+}
 .div-transparent:before
 {
 content: "";
@@ -225,7 +228,7 @@ display: inline-block;
 font-size: 14px;
 line-height: 4em;
 margin-bottom: 1em;
-padding: 0 1em;
+padding: 1em 1em;
 position: relative;
 text-align: center;
 vertical-align: top;
@@ -536,10 +539,10 @@ font-size: 26px;
 	text-align: right;
 	font-weight:normal;
 	font-family: 'Questrial', sans-serif;
-	font-weight: 400;
-	font-size: 14px;
+	font-weight: 600;
+	font-size: 18px;
 	line-height: 150%;
-  color:#EE2D24;
+  color:#CE2029; 
 }
 
 .text-slider-container  p
@@ -709,6 +712,7 @@ https://www.athleticlab.com/# */
     background-size: 0% 2px;
  
   }
+
   .special:hover, .special:focus {
     text-decoration: none; 
     background-size: 100% 2px;
@@ -2040,6 +2044,10 @@ https://www.athleticlab.com/# */
 #Bio{
   position: relative;
 }
+#paypal-button-container{
+  margin-left: 0 !important; 
+
+}
 #bottom-bor{
  margin-top: 10%;
  z-index: 10;
@@ -2597,11 +2605,11 @@ width: 50vw !important;
   flex: 1; 
 }
 .text-segment {
-  z-index: 1; 
+  z-index: 50 !important; 
   text-align: center;
-  display: inline-block;
+  display: block !important; 
   text-shadow: 1px 1px #fafafa;
-  font-size: 25px;
+  font-size: 14px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
   opacity: 0;
   animation: fade 16s linear infinite;
