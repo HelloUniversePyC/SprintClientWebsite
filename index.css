@@ -2001,7 +2001,7 @@ https://www.athleticlab.com/# */
     /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
     background-color: #fafafa; 
     overflow-x:hidden; 
-    width: 90%; 
+    width: 100vw;  
    
   }
   .desktop{
