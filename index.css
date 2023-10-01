@@ -279,7 +279,8 @@ text-align: center;
 .site-header { 
   transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
   border-bottom: 1px solid #DCE0D9;
-  background-color: #DD0004;
+  background-color:#DD0004;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   text-shadow: none; 
   min-width: 100vw; 
   color: black; 
