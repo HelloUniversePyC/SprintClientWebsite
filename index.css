@@ -268,7 +268,7 @@ border-top-color: #ddf;
 
 
 .footer{
-background-color:#CE2029;
+background-color:#DD0004;
 width: 100%;
 text-align: center;
 }
@@ -279,7 +279,7 @@ text-align: center;
 .site-header { 
   transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
   border-bottom: 1px solid #DCE0D9;
-  background-color: #CE2029;
+  background-color: #DD0004;
   text-shadow: none; 
   min-width: 100vw; 
   color: black; 
@@ -308,7 +308,7 @@ text-align: center;
 }
 .button {
   transition: border 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
-  background-color: #CE2029; /* Green */
+  background-color: #DD0004; /* Green */
   border: none;
   color: white;
   padding: 10px 10px;
@@ -401,7 +401,7 @@ text-align: center;
 }
 
 .active, .dot:hover {
-background-color: #CE2029;
+background-color: #DD0004;
 }
 
 /* Fading animation */
@@ -542,7 +542,7 @@ font-size: 26px;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 150%;
-  color:#CE2029; 
+  color:#DD0004; 
 }
 
 .text-slider-container  p
@@ -677,7 +677,7 @@ animation-delay: 12s; /* Delay the start of the third segment by 8 seconds */
 }
 
 
-/* #CE2029  Red
+/* #DD0004  Red
 #100C08 Black
 #808F85 Darker Grey
 #DCE0D9 Lighter grey*/
@@ -959,7 +959,7 @@ ul{
 }
 
 .footer{
-  background-color:#CE2029;
+  background-color:#DD0004;
   width: 100%;
   text-align: center;
 }
@@ -969,7 +969,7 @@ ul{
     display: block; 
     height: 30%; 
     border-bottom: 1px solid #DCE0D9;
-    background-color: #CE2029;
+    background-color: #DD0004;
     text-shadow: none; 
     width: 100vw !important; 
     color: black; 
@@ -986,7 +986,7 @@ ul{
   
   .button {
     transition: border 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
-    background-color: #CE2029; /* Green */
+    background-color: #DD0004; /* Green */
     border: none;
     color: white;
     padding: 10px 10px;
@@ -1078,7 +1078,7 @@ ul{
 
 
 .active, .dot:hover {
-  background-color: #CE2029;
+  background-color: #DD0004;
 }
 
 /* Fading animation */
@@ -1341,7 +1341,7 @@ ul{
 }
 
 
-/* #CE2029  Red
+/* #DD0004  Red
 #100C08 Black
 #808F85 Darker Grey
 #DCE0D9 Lighter grey*/
@@ -1612,7 +1612,7 @@ ul{
 }
 
 .footer{
-  background-color:#CE2029;
+  background-color:#DD0004;
   width: 100%;
   text-align: center;
 }
@@ -1622,7 +1622,7 @@ ul{
     display: inline-block; 
     height: 300vh !important;
     border-bottom: 1px solid #DCE0D9;
-    background-color: #CE2029;
+    background-color: #DD0004;
     text-shadow: none; 
     width: 100vw !important;  
     color: black; 
@@ -1638,7 +1638,7 @@ ul{
   
   .button {
     transition: border 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
-    background-color: #CE2029; /* Green */
+    background-color: #DD0004; /* Green */
     border: none;
     color: white;
     padding: 10px 10px;
@@ -1732,7 +1732,7 @@ ul{
 
 
 .active, .dot:hover {
-  background-color: #CE2029;
+  background-color: #DD0004;
 }
 
 /* Fading animation */
@@ -1985,7 +1985,7 @@ ul{
 }
 
 
-/* #CE2029  Red
+/* #DD0004  Red
 #100C08 Black
 #808F85 Darker Grey
 #DCE0D9 Lighter grey*/
@@ -2002,6 +2002,7 @@ https://www.athleticlab.com/# */
     background-color: #fafafa; 
     overflow-x:hidden; 
     width: 100vw;  
+    height: 100% !important; 
    
   }
   .desktop{
@@ -2123,7 +2124,7 @@ table{
 /* */
 #texture{
   background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
-  width: 100vw; 
+  width: 100vw !important; 
 }
 #photo img{
   border-radius: 2%; 
@@ -2186,7 +2187,7 @@ ul{
   object-fit: contain; 
 }
 #photo1 img{
-  scale: 1.5 1 !important;
+  scale: 1.4 1.2 !important;
 }
 .biohead{
   background-color: rgba(255,0,59,0.8);
@@ -2227,9 +2228,9 @@ ul{
   text-align: left; 
   padding-left: 80px; 
   font-size: 20px !important;
-  width: 500% !important; /* Or 100% if you want it to take the full width */
-  margin: 0 auto !important; /* Centers the paragraph if its width is less than 100% */
-  padding: 10px !important; /* Adjust as needed */
+  width: 500% !important; 
+  margin: 0 auto !important; 
+  padding: 10px !important; 
 }
 .offer:hover{
   background-color: rgba(255,255,255,0.3);
@@ -2296,21 +2297,23 @@ ul{
 }
 
 .footer{
-  background-color:#CE2029;
+  background-color:#DD0004;
   width: 100vw; 
   text-align: center;
 }
 .linky1{
-width: 50vw !important; 
+width: 80vw !important; 
+font-size: 11px !important;
 }
 .linky2{
- width: 60vw !important;
+ width: 80vw !important;
+ font-size: 11px !important;
 }
 
   .site-header { 
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
     border-bottom: 1px solid #DCE0D9;
-    background-color: #CE2029;
+    background-color: #DD0004;
     height: 5% !important; 
     display: flex;
     flex-direction: row !important;
@@ -2368,7 +2371,7 @@ width: 50vw !important;
 
   .button {
     transition: border 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
-    background-color: #CE2029; /* Green */
+    background-color: #DD0004; /* Green */
     border: none;
     color: white;
     padding: 10px 10px;
@@ -2450,7 +2453,7 @@ width: 50vw !important;
 }
 
 .active, .dot:hover {
-  background-color: #CE2029;
+  background-color: #DD0004;
 }
 
 /* Fading animation */
@@ -2553,7 +2556,7 @@ width: 50vw !important;
 }
  
 /* (C2) MOVE SLIDES */
-.vmove { animation: slidev linear 15s infinite; }
+.vmove { animation: slidev linear 50s infinite; }
 .vmove:hover { animation-play-state: paused; }
 
 
@@ -2643,7 +2646,7 @@ width: 50vw !important;
 }
 
 
-/* #CE2029  Red
+/* #DD0004  Red
 #100C08 Black
 #808F85 Darker Grey
 #DCE0D9 Lighter grey*/
