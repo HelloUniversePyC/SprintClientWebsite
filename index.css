@@ -742,14 +742,16 @@
   margin-top: 19.6%;
   height: 1px;
 }
-#globemobile{
-  visibility: visible !important;
-  display: block !important; 
-}
 .mobile-view{
   visibility: visible;
   display: block;
 }
+#globemobile{
+  visibility: visible !important;
+  display: block !important; 
+  margin-left: -25vw;
+}
+
 .div-transparent:before
 {
   content: "";
@@ -774,12 +776,7 @@ table{
   text-shadow: 1px 1px #fafafa; 
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
-.globe-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+
 
 #globe{
   /*-webkit-filter: saturate(200%);  Safari 6.0 - 9.0 */
@@ -798,13 +795,13 @@ table{
 .translate{
   white-space: normal; 
   position: relative; 
-  transform: translateX(55%) translateY(-45%); 
+  transform: translateX(-20%) translateY(-40%); 
   margin-top: -10%; 
 }
 .translate h1{
   background-color: rgba(0,0,0,0.05);
   padding: 5px; 
-  width: 40vw;
+  width: 65vw;
 }
 .layout{
   margin: 0; 
