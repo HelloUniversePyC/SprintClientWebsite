@@ -751,7 +751,14 @@
   display: block !important; 
   margin-left: -25vw;
 }
-
+#dropdown{
+  visibility: visible;
+  display: inline-block; 
+  font-size: 40px; 
+  color: white; 
+  cursor: pointer;
+  z-index: 40; 
+}
 .div-transparent:before
 {
   content: "";
@@ -960,15 +967,18 @@ ul{
   .site-header { 
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
     border-bottom: 1px solid #DCE0D9;
-    height: 13vh; 
     background-color: #DD0004;
+    height: 7vh !important; 
     text-shadow: none; 
-    width: 100vw !important; 
+    object-fit: contain !important; 
+    width: 100%;
     color: black; 
-    padding: .2em 0.2em; 
-    position: fixed;
+    padding: .2em 0.2em;
+    overflow: hidden;
+    position: fixed !important;
     z-index: 10; 
     text-decoration: none;
+    transition: height 0.4s ease-in-out; 
   }
   #logotxt{
     font-family: 'Orbitron', sans-serif;
@@ -1027,16 +1037,27 @@ ul{
   }
   
   .site-navigation.show{
-    display: block;
-    visibility: visible; 
+    display: inline-block !important;
+    visibility: visible !important;
     opacity: 1; 
     max-height: 400px; 
+    transform: translateX(-50%) !important;
   }
   
   .site-navigation ul, li {
     margin: 0; 
     padding: 0;
     flex: 0.5; 
+  }
+  .site-navigation {
+    flex-direction: row; 
+    max-height: 0; /* Set the initial max-height to 0 */
+    transition: max-height 0.4s ease-in-out; 
+    display:  none !important;
+    visibility: hidden !important; 
+    z-index: 50; 
+    margin: 1.4em 1em 1em 1em;
+    min-height: 0; 
   }
   
   
@@ -1141,7 +1162,9 @@ ul{
 .grow:hover{
   font-size: 26px; 
 }
-
+.site-header.grow{
+  height: 20vh !important; 
+}
 
 
 #slider, ul
@@ -1673,35 +1696,34 @@ font-size: 11px !important;
     transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
     border-bottom: 1px solid #DCE0D9;
     background-color: #DD0004;
-    height: 5% !important; 
+    height: 11vh !important; 
     display: flex;
     flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important; 
     text-shadow: none; 
     object-fit: contain !important; 
-    width: 100%;
+    width: 100vw !important;
     color: black; 
     padding: .2em 0.2em;
     overflow: hidden;
-    height: 9vh !important; 
     position: fixed !important;
     z-index: 10; 
     text-decoration: none;
     transition: height 0.4s ease-in-out; 
   }
   .site-header.grow{
-    height: 80vh !important; 
+    height: 90vh !important; 
   }
   .site-navigation {
-    flex-direction: column; 
+    flex-direction: column !important; 
     max-height: 0; /* Set the initial max-height to 0 */
     transition: max-height 0.4s ease-in-out; 
     display:  none !important;
     visibility: hidden !important; 
-    z-index: 50; 
-    margin: 1.4em 1em 1em 1em;
-    min-height: 0; 
+    z-index: 50 !important; 
+    margin: 1.4em 1em 1em 1em !important;
+    min-height: 0 !important; 
   }
   .nav{
     display: block !important; 
@@ -1714,7 +1736,8 @@ font-size: 11px !important;
     font-weight: 150 !important; 
     max-height: 500px !important; 
     font-family: "Roboto", sans-serif ;
-    margin-top: -3% !important; 
+    margin-top: 1vh !important; 
+    margin-left: 50vw !important;
   }
   header{
     display: block !important; 
