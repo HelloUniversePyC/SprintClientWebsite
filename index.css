@@ -723,6 +723,16 @@
 }
 .services tr td{
   display: block !important; 
+  /*Added for mobile*/
+  margin-left: 32vw !important; 
+}
+
+.stylechange{
+  display: flex !important;
+  flex-direction:column !important;
+  justify-content: center !important;
+  align-items: center !important;
+
 }
 .desktop{
   visibility: hidden;
@@ -841,13 +851,13 @@ table{
   margin-top: -10%;
   text-align: center;
 }
+#text-slider{
+  visibility: visible !important;
+  display: block !important; 
+}
 
 #texture{
   background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
 }
 #photo1 img{
   border-radius: 2%;
@@ -886,6 +896,9 @@ ul{
   position: relative;
   padding: 1%; 
   z-index: 20; 
+  /*Added classes from mobile*/
+  transform:  translateX(1vw) !important; 
+  width: 50vw !important; 
 }
 #biotxt{
   position: relative;  
@@ -901,6 +914,10 @@ ul{
   background-color: transparent;
   transition: background-color 0.2s ease-in-out; 
   border-radius: 2%; 
+  /*Added for mobile*/
+  font-size: 30px !important;
+  width: 50vw !important; 
+  margin-left: -15vw !important;
 }
 .offer:hover{
   background-color: rgba(255,255,255,0.3);
@@ -908,7 +925,7 @@ ul{
 .glow{
   box-shadow: none;
   transition: box-shadow 0.2s ease-in-out;
-  flex-grow: 3; 
+  scale: 1.5 1.1; 
 }
 .glow:hover{
   box-shadow: 2px 2px 1px #333333; 
@@ -1041,7 +1058,15 @@ ul{
     visibility: visible !important;
     opacity: 1; 
     max-height: 400px; 
-    transform: translateX(-50%) !important;
+    margin-top: -0.01vh !important;
+    transform: translateX(-20%) !important;
+  }
+
+  #head_of{
+    /*Added for mobile*/
+    margin-left: -7vw; 
+    font-weight: 600 !important;
+    font-size: 35px !important
   }
   
   .site-navigation ul, li {
@@ -1081,7 +1106,16 @@ ul{
   bottom: 8px;
   width: 100%;
   text-align: center;
+  /*Changed from mobile*/
+  display: flex !important;
+  flex-direction:column !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
+.text td{
+  margin-top: 48vh !important;
+}
+#ForOffersSection
 
 
 .active, .dot:hover {
@@ -1359,7 +1393,7 @@ ul{
 https://www.athleticlab.com/# */ 
 }
 
-@media(max-width: 480px){
+@media screen and (max-width: 480px){
   body {
     margin-left: auto !important;
     margin-right: auto !important ;
@@ -1374,6 +1408,9 @@ https://www.athleticlab.com/# */
   .desktop{
     display: none;
     visibility: hidden;
+  }
+  .text td{
+    margin-top: 0 !important;
   }
   .image{
     background-image: url("./Images/track.jpg") !important;
@@ -1425,6 +1462,7 @@ https://www.athleticlab.com/# */
   margin-left: 0 !important; 
 
 }
+
 #bottom-bor{
  margin-top: 10%;
  z-index: 10;
@@ -1541,6 +1579,7 @@ ul{
 .bio tr{
  /* margin: 70% 0 0 0;  */
   padding: 0 !important; 
+  transform: translateY(60vh) !important;
 }
 .bio td{
   padding: 0 !important;
@@ -1579,6 +1618,8 @@ ul{
   transform: translateX(-10%); 
   padding: 0; 
   scale: 0.8 0.8 !important; 
+  transform:  none;
+  width: auto; 
 }
 .mobile-view{
   visibility: visible;
@@ -1595,8 +1636,10 @@ ul{
   transition: background-color 0.2s ease-in-out;
   font-size: 16px !important;
   text-align: center;
-  width: 60%; 
+  width: 70vw; 
+  margin-top: -5vh !important;
   margin-left: 12%; 
+  transform: none !important; 
 
 }
 #biotxt:hover{
@@ -1610,9 +1653,13 @@ ul{
   text-align: left; 
   padding-left: 80px; 
   font-size: 20px !important;
-  width: 500% !important; 
+  width: 50vw !important; 
   margin: 0 auto !important; 
   padding: 10px !important; 
+}
+#text-slider{
+  visibility: hidden !important;
+  display: none !important;
 }
 .offer:hover{
   background-color: rgba(255,255,255,0.3);
@@ -1626,7 +1673,7 @@ ul{
 .glow{
   box-shadow: none;
   transition: box-shadow 0.2s ease-in-out;
-  scale: 900% 1 !important; 
+  scale: 6 1 !important; 
   padding-left: 50%; 
   padding-right: 8%; 
 }
