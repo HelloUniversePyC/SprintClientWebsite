@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-@media screen and (min-width: 481px) {
+@media only screen and (min-width: 1025px)  {
   body {
     margin: 0;
     /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
@@ -687,7 +687,7 @@
   /* Copy Website 
   https://www.athleticlab.com/# */ 
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
   body {
     margin: 0; 
     /*background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUXFxcYFx*/
@@ -740,7 +740,6 @@
 }
 #Bio{
   position: relative;
-  transform: translateY(-18%); 
 }
 #bottom-bor{
  margin-top: 10%;
@@ -751,10 +750,6 @@
   position: relative;
   margin-top: 19.6%;
   height: 1px;
-}
-.mobile-view{
-  visibility: visible;
-  display: block;
 }
 #globemobile{
   visibility: visible !important;
@@ -820,6 +815,42 @@ table{
   padding: 5px; 
   width: 65vw;
 }
+
+.vwrap, .vslide { 
+  width: 90%; 
+  height: 150px; 
+}
+.vslide h3{
+  font-size: 25px !important;
+}
+.vslide p{
+  font-size: 18px !important;
+}
+.vslide p strong{
+  font-size: 20px !important;
+}
+
+
+
+ 
+/* (B) OUTER WRAPPER HIDE SCROLLBAR */
+.vwrap { overflow: hidden; }
+ 
+/* (C) SHIFT SLIDES WITH CSS ANIMATION */
+/* (C1) SLIDES POSITION */
+.vmove { position: relative; bottom: 0%; }
+@keyframes slidev {
+  0% { bottom: 0; } 30% { bottom: 0; }
+  33% { bottom: 100%; } 63% { bottom: 100%; }
+  66% { bottom: 200%; } 97% { bottom: 200%; }
+  100% { right: 0; }
+}
+ 
+/* (C2) MOVE SLIDES */
+.vmove { animation: slidev linear 50s infinite; }
+.vmove:hover { animation-play-state: paused; }
+
+
 .layout{
   margin: 0; 
   padding: 0; 
@@ -841,6 +872,7 @@ table{
   border-bottom: 2px solid #A0A995;
   border-top: 2px solid #A0A995; 
 }
+/*Added class*/
 
 .focus h1{
   margin-top: -50%; 
@@ -851,10 +883,7 @@ table{
   margin-top: -10%;
   text-align: center;
 }
-#text-slider{
-  visibility: visible !important;
-  display: block !important; 
-}
+
 
 #texture{
   background: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1336.jpg") repeat 0 0;
@@ -886,25 +915,76 @@ li{
 ul{
   list-style: none;
 }
+
+.bio{
+  display: block; 
+  object-fit: contain; 
+  height: 200vh; 
+}
+
+.bio td:nth-child(odd) {
+  margin-bottom: 20px !important; /* Add some space between the top and bottom sections */
+}
 .bio tr{
  /* margin: 70% 0 0 0;  */
-  padding: 0; 
+  padding: 0 !important; 
+  transform: translateY(60vh) !important;
+}
+.bio td{
+  padding: 0 !important;
+  clear:both !important;
+}
+.stylechange{
+  display: flex !important;
+  flex-direction:column !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+}
+#photo2 img{
+  border-radius: 2%; 
+  /*max-width: 30vw;
+  max-height: 50vw; */
+  margin-top: 200% !important;
+  object-fit: contain;
+  scale: 1.5 1.5 !important;
+}
+#photo1{
+  border-radius: 2%;
+  max-width: 30vw;
+  max-height: 50vw; 
+  margin-top: -80% !important;
+  object-fit: contain; 
+}
+#photo1 img{
+  scale: 1.4 1.2 !important;
 }
 .biohead{
   background-color: rgba(255,0,59,0.8);
   border-radius: 2%; 
   position: relative;
-  padding: 1%; 
   z-index: 20; 
-  /*Added classes from mobile*/
-  transform:  translateX(1vw) !important; 
-  width: 50vw !important; 
+  transform: translateX(-10%); 
+  padding: 0; 
+  scale: 0.8 0.8 !important; 
+  transform:  none;
+  width: 60vw; 
+}
+.text{
+  visibility: hidden;
+  display: none; 
 }
 #biotxt{
-  position: relative;  
-  transform: translateY(60%);
+  position: relative;
+  height: 1vw !important;  
   background-color: rgba(0,0,0,0.6);
   transition: background-color 0.2s ease-in-out;
+  font-size: 25px !important;
+  text-align: center;
+  width: 70vw; 
+  margin-left: 12%; 
+  transform: none !important; 
+
 }
 #biotxt:hover{
   background-color: rgba(0,0,0,0.3);
@@ -1059,7 +1139,6 @@ ul{
     opacity: 1; 
     max-height: 400px; 
     margin-top: -0.01vh !important;
-    transform: translateX(-20%) !important;
   }
 
   #head_of{
@@ -1104,7 +1183,7 @@ ul{
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   /*Changed from mobile*/
   display: flex !important;
@@ -1113,7 +1192,7 @@ ul{
   align-items: center !important;
 }
 .text td{
-  margin-top: 48vh !important;
+  margin-top: 0 !important;
 }
 #ForOffersSection
 
@@ -1340,9 +1419,10 @@ ul{
   margin: 0 auto;
 }
 .mobile-view{
-  visibility: hidden;
-  display: none;
+  visibility: visible;
+  display: block;
 }
+
 #altSignUp{
   visibility: hidden;
   display: none;
@@ -1621,6 +1701,7 @@ ul{
   transform:  none;
   width: auto; 
 }
+
 .mobile-view{
   visibility: visible;
   display: block;
@@ -1968,6 +2049,15 @@ font-size: 11px !important;
 .vwrap, .vslide { 
   width: 90%; 
   height: 150px; 
+}
+.vslide h3{
+  font-size: 22px !important;
+}
+.vslide p{
+  font-size: 12px !important;
+}
+.vslide p strong{
+  font-size: 16px !important;
 }
 
 
