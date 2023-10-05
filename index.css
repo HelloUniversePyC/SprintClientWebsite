@@ -702,6 +702,10 @@
     background-image: url("./Images/track.jpg") !important;
     background-size: cover !important;
   }
+  #paypal-button-container{
+    margin-left: 35% !important; 
+  
+  }
   .layout {
     flex-direction: column; /* Stack images on small screens */
   }
@@ -1419,8 +1423,8 @@ ul{
   margin: 0 auto;
 }
 .mobile-view{
-  visibility: visible;
-  display: block;
+  visibility: visible !important;
+  display: block !important;
 }
 
 #altSignUp{
@@ -1484,6 +1488,10 @@ https://www.athleticlab.com/# */
     width: 100vw;  
     height: 100% !important; 
    
+  }
+  #paypal-button-container{
+    margin-left: 35% !important; 
+  
   }
   .desktop{
     display: none;
@@ -1703,8 +1711,8 @@ ul{
 }
 
 .mobile-view{
-  visibility: visible;
-  display: block;
+  visibility: visible !important;
+  display: block !important;
 }
 .text{
   visibility: hidden;
