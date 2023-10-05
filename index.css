@@ -742,6 +742,9 @@
   visibility: hidden;
   display: none;
 }
+#margin-top-add{
+  margin-top: 35vh !important;
+}
 #Bio{
   position: relative;
 }
@@ -1698,6 +1701,9 @@ ul{
 #photo1 img{
   scale: 1.4 1.2 !important;
 }
+#margin-top-add{
+  margin-top: 100vh !important; 
+}
 .biohead{
   background-color: rgba(255,0,59,0.8);
   border-radius: 2%; 
@@ -2106,6 +2112,9 @@ font-size: 11px !important;
 }
 #card-head:hover{
   opacity: 0.6 !important; 
+}
+#margin-top-add{
+  margin-top: 35vh !important; 
 }
  
 
