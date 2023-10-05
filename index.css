@@ -787,15 +787,18 @@ table{
   height: 100%;
 }
 #altSignUp{
-  visibility: visible;
-  display: block; 
-  width: 100vw; 
+  visibility: visible !important;
+  display: block !important; 
+  width: 100vw !important; 
+  margin-top: 8vh !important;
   color: inherit;
   text-decoration: none;
   text-shadow: 1px 1px #fafafa; 
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
-
+.atn{
+  margin: 0.2vw; 
+}
 
 #globe{
   /*-webkit-filter: saturate(200%);  Safari 6.0 - 9.0 */
@@ -1430,10 +1433,6 @@ ul{
   display: block !important;
 }
 
-#altSignUp{
-  visibility: hidden;
-  display: none;
-}
 .text-segment {
   z-index: 1; 
   text-align: center;
