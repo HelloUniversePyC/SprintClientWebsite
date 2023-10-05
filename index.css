@@ -82,14 +82,14 @@
   /*-webkit-filter: saturate(200%);  Safari 6.0 - 9.0 */
   /*filter: saturate(200%);*/
   filter: grayscale(100%) sepia(100%) hue-rotate(180deg);
-  height: 120%;
-  width: 2000%;
+  /*Use to be 120% and 2000%*/
+  scale: 1.5; 
   padding: 0;
   margin: 1%; 
   }
   .layout img{
   max-width: 30%;
-  max-height: 25%; 
+  max-height: 25%;
   padding: 0; 
   }
   #altSignUp{
@@ -98,7 +98,7 @@
   }
   .translate{
   position: relative; 
-  transform: translateX(70%) translateY(-95%); 
+  transform: translateX(90vh) translateY(-8vh); 
   margin-top: -10%; 
   }
   .translate h1{
@@ -115,9 +115,13 @@
   display: inline;
   position: flex; 
   transform: translateY(50%);  
-  transform: translateX(-30%);
+  transform: translateX(-50%);
   margin-left: auto;
   margin-right: auto; 
+  }
+  .scaler{
+    scale: 2 !important;
+    transform: translateX(-7vw) !important;
   }
   
   .hero{
