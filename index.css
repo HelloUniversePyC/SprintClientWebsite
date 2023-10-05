@@ -754,7 +754,7 @@
 #globemobile{
   visibility: visible !important;
   display: block !important; 
-  margin-left: 40vw;
+  margin-left: -30vw;
 }
 #dropdown{
   visibility: visible;
@@ -807,7 +807,7 @@ table{
 .translate{
   white-space: normal; 
   position: relative; 
-  transform: translateX(-40%) translateY(-40%); 
+  transform: translateX(-30%) translateY(-40%); 
   margin-top: -10%; 
 }
 .translate h1{
