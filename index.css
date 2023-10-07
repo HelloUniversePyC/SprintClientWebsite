@@ -120,7 +120,7 @@
   margin-right: auto; 
   }
   .scaler{
-    scale: 2 !important;
+    scale: 1.8 !important;
     transform: translateX(-7vw) !important;
   }
   
