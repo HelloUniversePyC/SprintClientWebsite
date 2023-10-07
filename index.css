@@ -423,8 +423,8 @@
   
   .wrapper{
   position: fixed;
-  top: 75%;
-  left: 50%;
+  top: 75vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
   
   }
