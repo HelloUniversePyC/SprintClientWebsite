@@ -423,7 +423,7 @@
   
   .wrapper{
   position: fixed;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   
@@ -765,7 +765,7 @@
 #globemobile{
   visibility: visible !important;
   display: block !important; 
-  margin-left: -30vw;
+  margin-left: -25vw;
 }
 #dropdown{
   visibility: visible;
@@ -1152,6 +1152,7 @@ ul{
     visibility: visible !important;
     opacity: 1; 
     max-height: 400px; 
+    transform: translateX(-20vw) !important;
     margin-top: -0.01vh !important;
   }
 
@@ -1539,7 +1540,7 @@ https://www.athleticlab.com/# */
   text-decoration: none;
   text-shadow: 1px 1px #fafafa; 
   font-family: 'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;'; 
-  transform: translateY(-22vh) !important; 
+  transform: translateY(-30vh) !important; 
 }
 #dropdown{
   visibility: visible;
