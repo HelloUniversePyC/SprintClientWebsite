@@ -1148,7 +1148,6 @@ ul{
     visibility: visible !important;
     opacity: 1; 
     max-height: 400px; 
-    transform: translateX(-20vw) !important;
     margin-top: -0.01vh !important;
   }
 
